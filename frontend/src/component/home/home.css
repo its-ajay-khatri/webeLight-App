@@ -1,0 +1,229 @@
+.banner {
+    background-image: linear-gradient(to right, #635dc0, #3027ae);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.banner p{
+    padding: 0px 0px 20px 0px;
+    font-size: 30px;
+    font-family: "Lucida Sans";
+}
+
+.banner h1{
+    padding: 40px 0px;
+    font-family: "Roboto";
+}
+
+.banner #container{
+    margin: 20px auto;
+    padding-top: 10%;
+}
+
+.banner a{
+    padding-top: 40px;
+}
+
+.banner a button {
+    padding: 15px 40px;
+    background-color: white;
+    color: #635dc0;
+    border: 2px solid white;
+    transition: all 0.5s;
+    font-size: 16px;
+}
+
+.banner a button:hover{
+    color: white;
+    background-color: rgba(255,255,255, 0);
+    border-radius: 2px solid white !important;
+
+}
+
+.banner::after {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    clip-path: polygon(100% 68%, 0 100%, 100% 100%);
+    max-width: 100%;
+
+}
+
+
+
+.homeHeading {
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 1.4vmax;
+    border-bottom: 1px solid rgba(21, 21, 0.5);
+    width: 20vmax;
+    padding: 1vmax;
+    margin: 5vmax auto;
+}
+
+
+
+/*---------------------------Featured Products CSS------------------------------------*/
+
+
+.featured-products-section{
+    margin-bottom: 30px;
+}
+
+/* .featured-container{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+} */
+
+.featured-container {
+    width: 80%;
+    overflow: hidden;
+    /* display: flex; */
+    justify-content: center;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
+/* .productCard{
+    width: 16%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 20px 30px;
+    text-decoration: none;
+} */
+
+.productCard {
+    width: 20%;
+    /* display: block; */
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 20px 30px;
+    text-decoration: none;
+}
+
+.productCard:hover{
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+    transition: all 0.5s;
+    transform: scale(1.10);
+}
+
+/* .productCard img{
+    width: 100%;
+    align-items: center;
+} */
+
+.productCard img {
+    width: 100%;
+    align-items: center;
+}
+
+.productCard p{
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+
+.featured-review {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.featured-review span{
+    display: block;
+}
+
+.featured-inner{
+    margin: 20px 0px;
+}
+
+.price-tag{
+    color: tomato;
+    font-size: 20px;
+    padding: 20px 10px;
+    font-weight: 800;
+}
+
+
+@media (min-width: 1025px) and (max-width: 1333px ){
+    .featured-container{
+        width: 100%;
+    }
+
+    .productCard{
+        width: 19%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+    .featured-container{
+        display: inline-block !important;
+        overflow: hidden !important;
+        width: 100% !important;
+        align-items: center !important;
+    }
+
+    .featured-review{
+        justify-content: left;
+        align-items: center;
+        display: inline-flex;
+        padding: 10px 10px;
+        width: 100%;
+        font-size: 25px;
+    }
+    
+
+    .productCard{
+        width: 42% !important;
+    }
+
+   .featured-inner{
+    display: flex;
+    flex-direction: column;
+   }
+} 
+
+@media (max-width: 767px){
+
+    .featured-container{
+        width: 100%;
+        display: inline-block !important;
+        align-items: center !important;
+    }
+
+    .productCard p{
+        font-size: 40px;
+    }
+
+    .featured-review{
+        justify-content: left;
+        padding: 10px 10px;
+        font-size: 30px;
+    }
+
+    .price-tag{
+        font-size: 30px;
+    }
+
+    .productCard{
+        width: 83% !important;
+    }
+
+    .featured-inner{
+        display: flex;
+        flex-direction: column;
+   }
+}

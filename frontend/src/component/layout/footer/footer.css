@@ -1,0 +1,75 @@
+footer{
+    background-color: rgb(34,33,33);
+    color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+}
+
+.leftFooter, .midFooter, .rightFooter{
+    width: 33%;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding: 30px 0px;
+}
+
+.leftFooter h4{
+    padding: 15px 0px;
+    font-family: "Roboto";
+}
+
+.leftFooter p{
+    padding: 15px 0px;
+    width: 60%;
+    font-size: 18px;
+}
+
+.footer-logo {
+    width: 33%;
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+
+.midFooter h1{
+    color: red;
+    font-family: "Roboto";
+    font-size: 4vmax;
+    padding-bottom: 30px;
+}
+
+.midFooter p{
+    margin: 0 auto;
+    padding: 10px 0px;
+}
+
+
+.rightFooter h4{
+    text-decoration: underline;
+    font-size: 21px;
+    font-family: "Roboto";
+    padding-bottom: 30px;
+}
+
+.rightFooter a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 19px;
+    font-family: "Gills Sans", "Gill Sans MT", Calibri, 'Trebuchet', sans-serif;
+    padding: 7px 0px;
+}
+
+.rightFooter a:hover{
+    color: red;
+}

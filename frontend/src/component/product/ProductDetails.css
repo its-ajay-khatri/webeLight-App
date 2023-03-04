@@ -1,0 +1,244 @@
+.productDetails{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 100%;
+    padding: 6vmax;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.product-detail-left{
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.product-detail-right{
+    display: inline-block;
+    float: right;
+    flex-direction: column;
+    vertical-align: center;
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid white;
+    padding: 33px;
+    height: 501px;
+}
+
+img.CarouselImage {
+    width: 300px;
+    height: 400px;
+}
+
+
+.carosoul-class.css-ohwg9z {
+    padding: 33px 0px;
+}
+
+.detailsBlock-1 {
+    border-bottom: 1px solid rgb(168, 167, 167);
+    width: 70%;
+    padding: 10px 0px 5px 0px;
+}
+
+.detailsBlock-1 p {
+    font-size: 13px;
+    color: gray;
+}
+
+.react-stars-wrapper-09369500706743152 {
+    float: left;
+    padding: 0px 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.detailsBlock-2 {
+    display: flex !important;
+    /* display: block; */
+    border-bottom: 1px solid rgb(168, 167, 167);
+    width: 70%;
+    display: inline-flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 13px 0px;
+}
+
+.detailsBlock-2 span{
+    display: block;
+}
+
+.react-stars-wrapper-021466286848144933 {
+    padding-right: 5px;
+}
+
+.detailsBlock-3 h1{
+    padding: 20px 0px;
+    color: rgb(31, 30, 30);
+}
+
+.detailsBlock-3-1{
+    overflow: hidden;
+    padding: 0px 0px 25px 0px;
+    border-bottom: 2px solid rgb(168, 167, 167);
+    width: 70%;
+}
+
+.detailsBlock-3-1-1 input{
+    padding: 7px;
+    width: 17px;
+    text-decoration: none;
+}
+
+.detailsBlock-3-1-1{
+    padding: 0px 20px 0px 0px;
+    display: inline-block;
+}
+
+.add-to-cart, .submitReview{
+    display: inline-block;
+    border-radius: 50px;
+    background-color: tomato;
+    color: white;
+    padding: 10px 30px;
+    border: 1px solid tomato
+}
+
+.detailsBlock-3-1-1 button {
+    padding: 7px 8px;
+    color: white;
+    border: 1px solid rgb(76 70 70);
+    background-color: rgb(76 70 70);
+}
+
+.detailsBlock-3 p{
+    padding: 15px 0px;
+    border-bottom: 2px solid rgb(168, 167, 167);
+    width: 70%;
+    font-size: 17px;
+}
+
+.detailsBlock-3 p b {
+    color: green;
+    font-weight: 600;
+}
+
+.detailsBlock-4{
+    font-size: 20px;
+    padding: 20px 0px;
+}
+
+.detailsBlock-4 p {
+    font-size: 14px !important;
+    line-height: 1.5;
+}
+
+.add-to-cart:hover, .submitReview:hover {
+    transition: all 0.5s;
+    transform: scale(1.10);
+}
+
+
+
+/*---------------------Reviews part----------------------------------------------*/
+
+.reviewsheading{
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 1.4vmax;
+    border-bottom: 1px solid rgba(21, 21, 0.5);
+    width: 20vmax;
+    padding: 1vmax;
+    margin: 5vmax auto;
+}
+
+.reviews{
+    display: flex;
+    overflow: auto;
+}
+
+.reviewCard{
+    box-shadow: 0 0 5px rgba(0,0,0,0.226);
+    border: 1px solid rgba(56, 56, 56, 0.116);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vmax;
+    padding: 3vmax;
+}
+
+.reviewCard img {
+    width: 100px;
+}
+
+.reviewCard p {
+    color: rgba(0,0,0,0.836);
+    font: 600 900 "roboto";
+}
+
+.reviewCard span{
+    color: rgba(0, 0, 0, 0.445);
+    font: 300 800 cursive;
+}
+
+
+.noReviews {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.445);
+    padding-bottom: 100px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .detailsBlock-1, .detailsBlock-2, .detailsBlock-3-1, .detailsBlock-3 p{
+        width: 100%;
+    }
+
+    .reviewsheading{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 767px){
+
+    .detailsBlock-1, .detailsBlock-2, .detailsBlock-3-1, .detailsBlock-3 p{
+        width: 100%;
+    }
+
+    .detailsBlock-3-1-1 {
+        /* padding: 0px 20px 0px 0px; */
+        display: inline-block;
+        padding: 20px 14px 20px 0px;
+    }
+
+    .product-detail-left, .product-detail-right{
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .product-detail-right{
+        height: 540px;
+    }
+
+    .detailsBlock-2{
+        justify-content: center;
+    }
+}
+
+.submitReview{
+    padding-bottom: 15px;
+}
+
+
+
+
+

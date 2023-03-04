@@ -1,0 +1,90 @@
+/*----------------------------Pagination---------------------------------------------------------*/
+
+.paginationBox {
+    display: flex;
+    justify-content: center;
+    margin: 7vmax;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+
+.page-item{
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    padding: 16px 22px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.page-item:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+.page-link{
+    text-decoration: none;
+    font: 300 17px "Roboto";
+    color: rgb(80, 80, 80);
+    transform: all 0.3s;
+}
+
+.page-item:hover .page-link{
+    color: rgb(0, 0, 0);
+}
+
+.pageItemActive{
+    background-color: tomato;
+}
+
+.pageLinkActive{
+    color: white
+}
+
+.featured-products-section{
+    position: relative;
+}
+
+.filterBox fieldset{
+    border: 1px solid black
+}
+/*---------------------------------------------Filter--------------------------------------- */
+
+.filterBox{
+    width: 10%;
+    position: absolute;
+    top: 10vmax;
+    left: 1vmax;
+}
+/*-------------------------------------------Categories--------------------------------------*/
+
+
+.categoryBox{
+    padding: 0%
+}
+
+.category-link{
+    list-style: none;
+    color: rgba(0, 0, 0, 0.61);
+    font: 400 0.8vmax "Roboto";
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.category-link:hover{
+    color: tomato;
+}
+
+@media screen and (max-width: 600px){
+    .filterBox{
+        width: 20vmax;
+        position: static;
+        margin: auto;
+    }
+
+    .page-link{
+        font: 300 1.7vmax "Roboto";
+    }
+}
